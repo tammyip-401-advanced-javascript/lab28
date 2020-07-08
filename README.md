@@ -5,7 +5,7 @@ Project Name: Context API
 Author: Tammy Ip
 
 Links and Resources (see below)
-submission PR: `https://github.com/tammyip-401-advanced-javascript/lab28/pull/1`
+submission PR: `https://github.com/tammyip-401-advanced-javascript/lab28/pull/3`
 Netlify: `https://401n16lab28.netlify.app/`
 
 

@@ -47,11 +47,18 @@ h2{
 }
 #list{
   background-color: $blue;
+  font-size: 0.8em;
 }
 
 #add{
   padding: 1em;
 }
+
+#item{
+  padding: 1.5em;
+  border: solid;
+}
+
 
 // .header {
 //   text-align: center;
