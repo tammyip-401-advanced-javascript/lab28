@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import SettingsContext from '../SettingsContext';
 import ToDoItem from './ToDoItem';
 
 function ToDoList(props) {
   let items = [];
+  const data = useContext(SettingsContext);
 
   if (props.tasks)
-    for (let i = 0; i < props.tasks.length; i++)
+    for (let i = 0; i < props.tasks.length; i++) {
+      if (!data.showCompleted && props.tasks[i].complete) continue;
       items.push(
         <ToDoItem
           key={i}
@@ -15,6 +18,7 @@ function ToDoList(props) {
           modifyTask={props.modifyTask}
         />,
       );
+    }
 
   return (
     <div id='list'>

@@ -5,8 +5,8 @@ Project Name: Context API
 Author: Tammy Ip
 
 Links and Resources (see below)
-submission PR: `https://github.com/tammyip-401-advanced-javascript/lab27/pull/1`
-Netlify: `https://401n16lab27.netlify.app/`
+submission PR: `https://github.com/tammyip-401-advanced-javascript/lab28/pull/3`
+Netlify: `https://401n16lab28.netlify.app/`
 
 
 Documentation
@@ -26,4 +26,5 @@ Setup
 
 
 UML
-https://docs.google.com/spreadsheets/d/1CNzH1gqGFqdVrcW1C2SnGe06eoTjJSF7pyZxpyNPaJg/edit#gid=0
+https://docs.google.com/spreadsheets/d/15xwpH9O-ubKz6D0FaNdpvIEJQKqmIvHPGfLbGLM_7Y8/edit?usp=sharing
+

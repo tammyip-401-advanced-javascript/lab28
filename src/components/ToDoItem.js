@@ -4,33 +4,33 @@ import Form from 'react-bootstrap/Form';
 
 function ToDoItem(props) {
   return (
-    <div>
-      <p>{props.data.text}</p>
+    <div id='item'>
+      <p>Task: {props.data.text}</p>
 
-      <p>{props.data.assignee}</p>
+      <p>Assign To: {props.data.assignee}</p>
 
-      <p>{props.data.difficulty}</p>
+      <p>Difficulty: {props.data.difficulty}</p>
 
       <button
         onClick={() => {
           props.deleteTask(props.indx);
         }}
       >
-        Delete
+        Delete Task
             </button>
 
       <Form.Group controlId={'todo-status-' + props.indx}>
-        <Form.Label>Status</Form.Label>
+        <Form.Label>Status: </Form.Label>
         <Form.Check
-          value={props.data.status}
+          value={props.data.complete}
           type='switch'
           onChange={() => {
             let newTask = { ...props.data };
-            newTask.status = !newTask.status;
+            newTask.complete = !newTask.complete;
             props.modifyTask(props.indx, newTask);
           }}
           id={'status-switch-' + props.indx}
-          label={props.data.status}
+          label={props.data.complete ? 'incomplete' : 'complete'}
         />
       </Form.Group>
     </div>
